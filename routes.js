@@ -13,7 +13,7 @@ function requestHandler(req, res) {
 		res.write("</html>");
 		return res.end();
 	}
-	if (url === "/users") {
+	if (url === "/users" && method === "POST") {
 		res.setHeader("Content-Type", "text/html");
 		res.write("<html>");
 		res.write("<head><title>Users</title></head>");
